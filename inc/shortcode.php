@@ -19,19 +19,13 @@ function bcloggedin_check_user ($params, $content = null){
       foreach ($user_now_role as $role) {
         echo $role;
       }
+      //user is logged in so show the content
+      return $content;
     }
-    //user is logged in so show the content
-    // return $content;
-
-  }
-
-  else{
-
+  else {
     //user is not logged in so hide the content
     return;
-
   }
-
 }
 
 //add a shortcode which calls the above function

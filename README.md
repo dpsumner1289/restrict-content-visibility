@@ -1,1 +1,1 @@
-# restrict-content-visibility
+# Restrict Content Visibility
