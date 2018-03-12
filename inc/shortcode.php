@@ -10,8 +10,8 @@ function bcloggedin_check_user ($params, $content = null){
       $rc_roles = $wp_roles->roles;
       
       $rc_atts = shortcode_atts( $rc_roles, $params );
-
-      global $current_user; 
+      print_r($rc_roles);
+      global $current_user;
       wp_get_current_user();
       $user_now = new WP_User();
 
